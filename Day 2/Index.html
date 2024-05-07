@@ -6,42 +6,87 @@
     <title>My first website</title>
 </head>
 <body>
-    <!-- Text Fields -->
-    <h1>Resiter form</h1>
-    <form >
-        <label for="Fname">First Name:</label>
-        <br>
-        <input type="text">
-        <br>
-        <label for="Lname">Last Name:</label>
-        <br>
-        <input type="text">
-        <br>
-        <input type="submit" value="submit">
-    </form>
-    <!-- Radio Button -->
-    <p>Chouse your favorite web language:</p>
-    <form>
-        <input type="radio" id="HTML" name="fav-langue" value="HTML">
-        <label for="HTML">HTML</label><br>
-        <input type="radio" id="CSS" name="fav-langue" value="CSS">
-        <label for="CSS">CSS</label><br>
-        <input type="radio" id="JavaScript" name="fav-langue" value="JavaScript">
-        <label for="JavaScript">JavaScript</label><br>
-    </form>
-    <!-- Checkboxes -->
-    <h4>what kind of computer do you use ?</h4>
-    <form >
-        <input type="checkbox" id="computer1" name="computer1" value="HP" >
-        <label for="computer1">I use de windwose computer</label>
-        <br>
-        <input type="checkbox" id="computer2" name="computer2" value="MAC" >
-        <label for="computer1">I use de MAC computer</label>
-        <br>
-        <input type="checkbox" id="computer3" name="computer3" value="HP" >
-        <label for="computer3">I use de auter</label>
-        <br>
-        <input type="submit" value="submit">
-    </form>
-</body>
+    <h1>My Perfect Pizza</h1>
+    <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width: 30%;" alt="">
+      <hr>
+      <form action="submit" method="post">
+				<h1>Create your perfect pizza!</h1>
+        <section class="protein">
+          <label for="patty">What type of pizza would you like?</label>
+    			<input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+        
+        <section class="patties">
+          <label for="amount">How many would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+        
+        <section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Rare</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Well-Done</span>
+        </section>
+        <hr>
+
+        <!-- Checkboxes -->
+        <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <input type="checkbox" name="topping" id="cheese" value="cheese">
+          <label for="lettuce">cheese</label>
+          <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+          <label for="tomato">pepperoni</label>
+          <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+          <label for="onion">mushrooms</label>
+          <input type="checkbox" name="topping" id="spinach" value="spinach">
+          <label for="onion">spinach</label>
+        </section>
+        <hr>
+        <!-- Radio Button -->
+        <section class="cheesy">
+          <span>Would you like to add Coke?</span>
+          <br>
+          <input type="radio" name="cheese" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="cheese" id="no" value="yes">
+          <label for="no">No</label>
+        </section>
+        <hr>
+       
+        <section class="bun-type">
+          <label for="bun">What type of bun would you like?</label>
+          <select name="bun" id="bun">
+            <option value="sesame">Sesame</option>
+            <option value="potatoe">Potato</option>
+            <option value="pretzel">Pretzel</option>
+          </select>
+        </section>
+        <hr>
+        
+        <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="mustard"></option>
+          </datalist>
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+        <!-- Submit button -->
+        <section class="Submit">
+          <input type="submit" value="Submit">
+        </section>
+      </form>
+  </body
 </html>
