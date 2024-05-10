@@ -1,0 +1,49 @@
+body {
+  background-image: url(image/image-2.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.title {
+  font-family: "Times New Roman";
+  font-size: 30px;
+  color: rgb(180, 97, 37);
+
+}
+
+p {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.forme-label {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form {
+  padding: 5px;
+  border: 15px solid whitesmoke;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: whitesmoke;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+input {
+  color: orangered;
+}
+
+#submit-button {
+  background-color: green;
+  color: whitesmoke;
+  font-family: arial;
+  font-size: medium;
+}
+
+button {
+  background-color: red;
+  font-family: arial;
+  font-size: medium;
+}

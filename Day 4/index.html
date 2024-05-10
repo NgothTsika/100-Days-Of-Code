@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <title>Form web site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+      <div class="title">
+        <h1>BASKETBALL ACADEMY</h1>
+      </div>
+      <p>
+        Welcome to our basketball academy, a place where passion for this sport
+        meets the excellence of teaching.
+      </p>
+      <form class="form">
+        <div>
+          <h2 class="forme-label">Registration Form</h2>
+          <label>First name</label>
+          <input
+            type="text"
+            name="first name"
+            placeholder="please entre your name"
+          />
+        </div>
+        <br />
+        <div>
+          <label>Last name</label>
+          <input
+            type="text"
+            name="last name"
+            placeholder="please add your last name"
+          />
+        </div>
+        <br />
+        <div>
+          <label>Age</label>
+          <input type="number" name="age" placeholder="please add your age" />
+        </div>
+        <br />
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="entre your Email" />
+        </div>
+        <br />
+        <div>
+          <label>Password</label>
+          <input type="password" placeholder="password" />
+        </div>
+        <br />
+        <div>
+          <label>Gender</label>
+          <input type="radio" name="Gender" value="male" />Male
+          <input type="radio" name="Gender" value="female" />Female
+          <input type="radio" name="Gender" value="other" />Other
+        </div>
+        <br />
+        <div>
+          <input id="submit-button" type="submit" value="submit" />
+          <button>sign up</button>
+        </div>
+      </form>
+  </body>
 </html>
