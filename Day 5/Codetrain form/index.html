@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codetrain Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="fist-box">
+        <div id="header">
+          <h2 id="title">Codetrain Registration Form</h2>
+          <p id="description">
+            There are 3 steps in our application process. Firstly, fill out this
+            enrolment form, and then our admissions team will reach out to you
+            to find out if you are a good fit for the program. If you make it
+            through, we will assist you to get started on the admissions
+            process.
+          </p>
+        </div>
+        <div id="mail-div">
+          <p>genialtsika@gmail.com <em>Switch Account</em></p>
+          <img src="image/img1.png" width="20px" height="20px" />
+        </div>
+        <div id="indicates">
+          <p>* Indicates required question</p>
+        </div>
+      </div>
+      <div id="box">
+        <label id="email-label" for="email">Email <span>*</span> <br /><br />
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required="">
+
+      </div>
+      <div id="box">
+        <label id="fullname-label" for="fullname">Full Name <span>*</span> <br /><br />
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="" />
+      </div>
+
+      <div id="box">
+        <label id="phonenumber-label" for="phonenumber">Phone Number <span>*</span> <br /><br />
+        <input type="number" name="phonenumber" id="phonenumber" class="form-control" placeholder="Enter your phonenumber" required=""/>
+      </div>
+
+      <div id="box">
+        <label id="phonenumber2-label" for="phonenumber2">Phone Number of next of kin <span>*</span> <br /><br />
+          <p>
+            Phone number of someone we can reach out to in case your phone is off
+            or not reachable. <br />
+            Eg: your parent, guardian or sibling, or spouse.
+          </p>
+          <input type="number" name="phonenumber2" id="phonenumber2" class="form-control" placeholder="Entre the number" required=""/>
+      </div>
+      <div class="form-group " id="box-2" >
+        <p>Can you pay 60% or more of the full Codetrain fees (GH6,000)
+          <em id="label">*</em></p>
+        <label>
+            <input name="user-recommend" value="yes" type="radio" class="input-radio" checked="">Yes</label> <br>
+        <label>
+            <input name="user-recommend" value="no" type="radio" class="input-radio">No</label>
+      </div>
+      <div class="form-group " id="box-2" >
+        <p>Please ndicate who is going to pay your fees
+          <em id="label">*</em></p>
+        <label>
+            <input name="user-accord" value="yourself" type="radio" class="input-radio" checked="">Yourself</label> <br>
+        <label>
+            <input name="user-accord" value="parentsponser" type="radio" class="input-radio">Parent/ Sponser</label> <br>
+            <label>
+              <input name="user-accord" value="organization" type="radio" class="input-radio">Organization</label>
+      </div>
+      <div id="box">
+        <label id="Location" for="Location">Location <span>*</span> <br /><br />
+        <input type="" name="Location" id="Location" class="form-control" placeholder="Enter your Location" required="">
+      </div>
+      <div id="box">
+        <label id="school" for="school">Current or previous school <span>*</span> <br /><br />
+        <input type="" name="school" id="school" class="form-control" placeholder="Enter your Current or previous school" required="">
+      </div>
+      <div class="form-group" id="box">
+        <label>How did you hear about Codetrain ? <span>*</span>
+          <br /> <br />
+        <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="youtube">Youtube</option>
+            <option value="tv">Tv</option>
+            <option value="radio">Radio</option>
+            <option value="friend">Friend</option>
+            <option value="parent">Parent</option>
+          </select>
+      </div>
+      <div class="form-group" id="box-3">
+        <label>Why do you want to join Codetrain <span>*</span>
+          <br /> <br />
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    <p id="text">A copy of your responses will be emailed to the address you provided</p>
+    
+    <div class="final_box form-group">
+        <button class="submit" type="button" type="submit" id="submit">submit</button><span class="progress"></span><span class="page_number">Page 1 of 1</span>
+        <P class="clear_form">Clear form</P>
+    </div>
+        <p id="text">Never submit passwords though Google Form</p>
+        <div class="last-icon">
+            <img src="image/recaptcha.png" width="100px" height="50px">
+            <p id="text">This content is created nor endorsed by Google <a href="#">Report Abuse</a>- <a href="#">Terms of Service</a>-<a href="#"> Privacy Policy</a></p>
+            <h2 id="text"> <strong>Google</strong> Forms</h2>
+        </div>
+    </main>
+  </body>
+</html>
