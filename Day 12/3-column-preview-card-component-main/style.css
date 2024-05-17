@@ -1,0 +1,155 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* box sedans */
+.box-one{
+    background-color: var(--Bright-orange);
+    width: 330px;
+    height: 490px;
+    padding: 40px;
+
+   
+}
+.box-one button{
+    color: var(--Bright-orange);
+}
+
+
+/* box suvs */
+
+.box-two{
+    background-color: var(--Dark-cyan);
+    width: 330px;
+    height: 490px;
+    padding: 40px;
+}
+.box-two button{
+    color: var(--Dark-cyan);
+}
+
+
+/* box luxury */
+
+.box-tree{
+    background-color: var(--Very-dark-cyan);
+    width: 330px;
+    height: 490px;
+    padding: 40px;
+    
+    
+}
+.box-tree button{
+    color: var(--Very-dark-cyan);
+}
+
+/* global items */
+
+img{
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+h1{
+    
+    margin-bottom: 20px;
+    color: white;
+}
+
+p{
+    font-size: 20px;
+    gap: 4rem;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    color: white;
+    font-weight: lighter;
+
+}
+
+button{
+    border-style: none;
+    width: 120px;
+    padding: 14px;
+    border-radius: 18px;
+    font-weight: bolder;
+    font-size: 15px; 
+    cursor: pointer;   
+}
+button:hover{
+    background:none;
+    border: 2px solid white;
+    color: white;
+
+}
+
+
+
+@media screen and (max-width:700px) {
+    
+    .main-box{
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .box-one{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: none;
+        border-bottom-right-radius: none;
+    }
+    .box-tree{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: none;
+        border-top-left-radius: none;
+    }
+    
+}
+
+@media screen and (min-width:700px){
+    .box-one{
+        border-top-left-radius: 10px;
+        border-top-right-radius: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: none;
+    }
+    .box-tree{
+        border-bottom-left-radius: none;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: none;
+    } 
+}
+
