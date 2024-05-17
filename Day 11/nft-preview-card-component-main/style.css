@@ -15,6 +15,7 @@ main{
     height: 100vh;
     font-family:serif
 }
+
 .card{
     width: 270px;
     height:455px;
@@ -57,12 +58,6 @@ main{
     cursor: pointer;
 }
 
-/* .card-img img{
-    width: 265px;
-    height: 265px;
-    border-radius: 10px; 
-    cursor: pointer;  
-} */
 
 .card-description{
     padding:0 10px;
