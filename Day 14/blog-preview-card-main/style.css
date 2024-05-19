@@ -1,0 +1,87 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color:hsl(47, 88%, 63%);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+}
+/* main card */
+.card{
+    width: 300px;
+    height:440px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 1px  hsl(0, 0%, 7%) ; 
+    border-radius: 15px;
+    box-shadow: 5px 5px  hsl(0, 0%, 7%);
+}
+.card:hover{
+    box-shadow:9px 9px  hsl(0, 0%, 7%); 
+}
+
+/* main card */
+
+/*card img illustat */
+img{
+    width: 270px;   
+    border-radius: 10px;
+    margin:15px;
+
+}
+
+/*card img illustat */
+
+.card-content{
+margin-left: 15px;
+margin-top: -5%;
+
+}
+.card-content .titel{
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    background-color: hsl(47, 88%, 63%) ;
+    width: 64px; 
+    padding:5px 10px; 
+    font-size: 15px; 
+    border-radius: 5px;
+
+}
+.card-content .date{
+    color:  hsl(0, 0%, 7%);
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: -1%;
+}
+.card-content h3{
+    color: black;
+    font-weight: bolder;
+    font-size: 21px;
+    margin-bottom: 10px;
+    margin-top: -2%;
+    cursor: pointer;
+}
+.card-content h3:hover{
+    color: hsl(47, 88%, 63%) ;
+}
+.card-content .description{
+    color: hsl(0, 0%, 50%) ;
+    font-weight:normal;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.profil .id{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: hsl(0, 0%, 7%) ;
+    font-weight: bolder;
+
+}
