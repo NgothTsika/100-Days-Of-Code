@@ -5,11 +5,12 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
 * {
   margin: O;
   padding: 0;
   box-sizing: border-box;
-  
+  font-family: serif;
 }
 
 :root {
@@ -22,7 +23,7 @@
   --sc-text-Wenge-Brown: hsl(30, 10%, 34%);
   --title-Dark-Charcoal: hsl(24, 5%, 18%);
 }
-
+/* main screen */
 body {
   background-color: var(--Eggshell);
   
@@ -33,26 +34,15 @@ main{
   align-items: center;
   align-content: center;
   font-size: 16px;
-}
-
-.line {
-  border: 0.1px solid var(--Light-Grey);
-  /* height: 5px; */
-  margin-bottom: 5px;
-  margin-top: 10px;
-  opacity: 0.2;
-}
-
-.main-card {
-  /* margin-top: 25px;
-  margin-bottom: 50px; */
   max-width: 60rem;
   margin-inline: auto;
   padding: 2rem 4rem;
 }
 
+
+/* main card */
 .card {
-  width: 390px;
+  width: 400px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 15px;
   padding: 20px 20px 0 20px;
@@ -60,41 +50,75 @@ main{
  
 }
 
-.card > img {
+/* all the small title */
+.title{
+  color: var(--sc-title-Nutmeg);
+  font-weight: bold;
+  
+}
+/* card img */
+.card  img {
   width: 100%;
   border-radius: 10px;
 }
-
+/* main title */
 .container,
 h1 {
   font-size: 25px;
   color: var(--title-Dark-Charcoal);
 }
-
+/* main description */
 .container,
 p {
   font-size: 10px;
   color: var(--title-Dark-Charcoal);
-  font-weight: lighter;
+  font-weight:initial;
 }
 
+
+/* the divide line under box 1 2 3 */
+hr{
+  border: 0.1px solid var(--Light-Grey);
+  opacity: 0.5;
+}
+
+/* box-1 */
 .container,
 .box-1 {
   background-color: var(--Rose-White-bg);
-  padding: 20px 10px 10px 20px;
+  padding: 5px 10px 10px 20px;
   border-radius: 15px;
 }
-/* box-1 */
+
+.container,
+.box-1 h4{
+  color: var(--Dark-Raspberry);
+  font-size: small;
+  margin-bottom: -5px;
+}
+
 .container,
 .box-1 ul {
   padding-left: 20px;
   margin-bottom: 10px;
 }
 
+
 .container,
-.box-1 label {
-  color: var(--Dark-Raspberry);
+.box-1 ul span {
   font-weight: bold;
+  color: var(--title-Dark-Charcoal);
+  font-size: small;
+  padding-left: 10px;
+}
+
+.box-1 ul li {
+  font-size: small;
+}
+.container,
+.box-1 ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
   
 }
 
@@ -103,7 +127,7 @@ p {
   font-weight: bold;
   color: var(--sc-text-Wenge-Brown);
   font-size: small;
-  padding-left: 10px;
+  
 }
 
 .box-1 ul li {
@@ -118,12 +142,6 @@ p {
   border-radius: 15px;
 }
 
-.box-2 label {
-  color: var(--Dark-Raspberry);
-  font-weight: bolder;
-  font-size: larger;
-}
-
 .box-2 ul li {
   font-size: small;
   font-weight: lighter;
@@ -131,39 +149,7 @@ p {
   padding-left: 15px;
 }
 
-.box-3 h2 {
-  color: var(--Dark-Raspberry);
-  font-weight: bolder;
-  font-size: larger;
-}
-
 /* box-3 */
-.container,
-.box-1 ul {
-  padding-left: 20px;
-  margin-bottom: 10px;
-  
-}
-
-.container,
-.box-1 label {
-  color: var(--Dark-Raspberry);
-  font-weight: bold;
-}
-
-.container,
-.box-1 ul span {
-  font-weight: bold;
-  color: var(--sc-text-Wenge-Brown);
-  font-size: small;
-  
-}
-
-.box-1 ul li {
-  font-size: small;
-}
-
-/* box-2 */
 
 .container,
 .box-3 ol {
@@ -171,12 +157,7 @@ p {
   border-radius: 15px;
   
 }
-.box-3 h2 {
-  color: var(--Dark-Raspberry);
-  font-weight: bolder;
-  font-size: larger;
-  
-}
+
 
 .box-3 ol li {
   font-weight: lighter;
@@ -184,11 +165,7 @@ p {
   padding-left: 20px;
 }
 
-.box-3 h2 {
-  color: var(--Dark-Raspberry);
-  font-weight: bolder;
-  font-size: larger;
-}
+
 
 .box-3,
 span,
@@ -212,84 +189,27 @@ span {
   font-size: small;
 }
 
+/* table */
+
 .nutrition table{
-  justify-content: center;
-  display: flex;
-
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
-table tr{
-  display: flex;
-  justify-content: space-between;
-  text-align: left; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  gap: 5rem;
+.nutrition th, td{
+  border-bottom: 1px solid var(--Light-Grey);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-
-
+.nutrition th{
+  color: var(--sc-title-Nutmeg);
+  font-weight: lighter;
+}
+.nutrition td{
+  color: var(--Dark-Raspberry);
+  font-weight: bolder;
+}
 
