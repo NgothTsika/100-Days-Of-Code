@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -15,111 +18,102 @@
   --Bright-orange: hsl(31, 77%, 52%);
   --Dark-cyan: hsl(184, 100%, 22%);
   --Very-dark-cyan: hsl(179, 100%, 13%);
+  --white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+}
+
+body {
+  background-color: var(--Very-light-gray);
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .main-box {
-  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 4px;
+  max-width: 970px;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 2rem;
+ 
 }
-
-/* box sedans */
+img {
+  width: 25%;
+  margin-bottom: 30px;
+}
+/* sedans box */
 .box-one {
   background-color: var(--Bright-orange);
-  width: 330px;
-  height: 490px;
-  padding: 40px;
 }
 .box-one button {
   color: var(--Bright-orange);
 }
-
-/* box suvs */
-
+/* suvs box */
 .box-two {
   background-color: var(--Dark-cyan);
-  width: 330px;
-  height: 490px;
-  padding: 40px;
 }
 .box-two button {
   color: var(--Dark-cyan);
 }
-
-/* box luxury */
-
-.box-tree {
+/* luxury box */
+.box-three {
   background-color: var(--Very-dark-cyan);
-  width: 330px;
-  height: 490px;
-  padding: 40px;
 }
-.box-tree button {
-
+.box-three button {
   color: var(--Very-dark-cyan);
 }
+/* card */
+.card {
+  padding: 30px;
+}
 
-/* global items */
-
-img {
-  width: 25%;
+.card h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 400;
+  color: var(--Very-light-gray);
   margin-bottom: 20px;
 }
 
-h1 {
-  margin-bottom: 20px;
-  color: white;
-}
-
-p {
-  font-size: 20px;
-  gap: 1rem;
-  margin-top: 30px;
-  margin-bottom: 70px;
-  color: white;
-  font-weight: lighter;
+.card p {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 700;
+  gap: 0.1rem;
+  color: var(--white-paragraphs);
+  line-height: 1.6;
   gap: inherit;
+  text-wrap: balance;
 }
 
-button {
-  border-style: none;
-  width: 120px;
-  padding: 14px;
-  border-radius: 18px;
-  font-weight: bolder;
-  font-size: 15px;
-  cursor: pointer;
+/* card button */
+.card button {
+  font-weight: bold;
+  background-color: var(--Very-light-gray);
+  padding: 13px 27px;
+  border-radius: 26px;
+  margin-top: 70px;
+  display: inline-block;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition: all 0.4s ease-in-out;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
 }
-button:hover {
-  background: none;
-  border: 2px solid white;
-  color: white;
+.card button:hover {
+  color: var(--Very-light-gray);
+  background-color: transparent;
 }
-button{
-transition: 0.2s all;
-box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
-
-}
-button:active{
-transform: scale(0.98);
-box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+.card button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
-/* madia */
-
-/* Mobile: 375px
-- Desktop: 1440px */
-
-@media screen and (max-width: 700px) {
+/* respos */
+@media only screen and (max-width: 768px) {
   .main-box {
     height: 100%;
     padding: 20px;
@@ -128,36 +122,11 @@ box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     align-items: center;
   }
   .content {
-    display: flex;
-    flex-direction: column;
-    
-  }
-
-  .box-one {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: none;
-    border-bottom-right-radius: none;
-  }
-  .box-tree {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: none;
-    border-top-left-radius: none;
+    grid-template-columns: 1fr;
   }
 }
-
-@media screen and (min-width: 700px) {
-  .box-one {
-    border-top-left-radius: 10px;
-    border-top-right-radius: none;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: none;
-  }
-  .box-tree {
-    border-bottom-left-radius: none;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: none;
+@media only screen and (max-width: 425px) {
+  .content {
+    margin: 0.5rem;
   }
 }
