@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -5,10 +7,7 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@font-face {
-  font-family: Outfit;
-  src: url(YoungSerif-Regular.ttf);
-}
+
 
 * {
   margin: 0;
@@ -26,7 +25,8 @@
 }
 body {
   background-color: var(--Grayish-Blue);
-   font-family: Outfit, sans-serif;
+   font-family: "Karla", sans-serif;
+   font-size:16px;
 }
 
 .main-box {
@@ -50,6 +50,7 @@ body {
 .container h2 {
   color: var(--Cyan);
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .container h5 {
@@ -83,7 +84,7 @@ body {
 }
 
 .button-box-one h5 {
-  color: var(--light-Cyan);
+  color: var(--Light-Gray);
   font-weight: lighter;
   display: flex;
   align-items: center;
@@ -135,8 +136,9 @@ body {
   font-weight: lighter;
 }
 
-.button-box-two h6 {
+.button-box-two p {
   font-weight: lighter;
+  font-size: 13px;
   color: var(--Light-Gray);
 }
 
