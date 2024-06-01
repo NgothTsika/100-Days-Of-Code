@@ -1,0 +1,108 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+   
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    width: 1150px;
+    height: 500px;
+
+}
+.id,a,label{
+
+    display: block;
+    align-items: center;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color:  hsl(210, 46%, 95%) ;
+    font-weight: bold;
+    font-size: small;
+
+}
+h6{
+    font-size: x-small;
+    text-align: left;
+}
+label{
+    margin-left: 10px;
+}
+#fist-box{
+    background-color: hsl(263, 55%, 52%) ;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    align-content: center;
+    border-radius: 5px;
+    height: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+#second-box{
+    background-color:hsl(217, 19%, 35%);
+    border-radius: 5px;
+    padding:0 auto;
+    height: 250px;
+    margin-right: 20px;
+    padding: 25px;
+   
+}
+#third-box{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding:0 auto;
+    height: 250px;
+    margin-right: 20px;
+    padding: 25px;
+
+   
+}
+#fourth-box{
+background-color:  hsl(219, 29%, 14%);
+border-radius: 5px;
+padding:0 auto;
+height: 250px;
+margin-right: 20px;
+padding: 25px;
+
+
+
+
+}
+#fifth-box{
+background-color: hsl(0, 0%, 100%);
+border-radius: 5px;
+padding:0 auto;
+width: 230px;
+height: 525px;
+padding: 25px;
+padding: 25px;
+
+}
+
+.title{
+color: hsl(210, 46%, 95%) ;
+font-weight: bold;
+font-size: 16px;
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+.description{
+color: hsl(0, 0%, 81%);
+font-weight: normal;
+font-size: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+
+

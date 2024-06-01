@@ -1,0 +1,38 @@
+#Resultat {
+  border-right: 1px solid black;
+  background-color: darkgrey;
+  height: 85px;
+  text-align: end;
+  font-size: 50px;
+  margin-top: 30px;
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
+  border-top: 1px black solid;
+}
+
+.last {
+  background-color: orange;
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  padding: 3px;
+  box-shadow: thistle;
+  text-align: center;
+  font-size: larger;
+  text-justify: auto;
+  font-size: 35px;
+}
+#cool {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: larger;
+  text-justify: auto;
+  font-size: 35px;
+  box-shadow: inset;
+  background-color: rgb(255, 255, 255);
+}
+.container {
+  width: auto;
+  height: auto;
+}

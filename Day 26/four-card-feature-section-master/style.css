@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} 
+
+:root{
+
+--Red-line: hsl(0, 78%, 62%);
+--Cyan-line: hsl(180, 62%, 55%);
+--Orange-line: hsl(34, 97%, 64%);
+--Blue-line: hsl(212, 86%, 64%);
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+
+}
+
+main{
+  max-width: 1440px;
+  height: 100vh;
+  margin-inline: auto;
+  padding: 20px;
+  display: block;
+}
+
+header{
+  text-align: center;
+  margin-block: 0.5rem;
+ 
+}
+header h1{
+  font-weight: lighter;
+}
+header h1 span{
+  font-weight:bolder ;
+}
+header p{
+  font-weight: lighter;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  
+}
+
+.card{
+  max-width: 330px;
+  height: 195px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  /* position: relative; */
+  cursor: pointer;
+  block-size: fit-content;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.247);
+}
+
+
+.card h2{
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 10px;
+}
+.card p{
+  color: var(--Grayish-Blue);
+  font-weight: lighter;
+  
+}
+.card img{
+  float: right;
+  margin-top: 20px;
+}
+/* card color line */
+.green-card{
+  border-top: 5px solid var(--Cyan-line);
+  margin-top: 100px;
+  
+}
+.green-card:hover{
+  box-shadow: 1px 1px 10px 0.5px var(--Cyan-line);
+}
+.red-card{
+  border-top: 5px solid  var(--Red-line);
+  margin-bottom: 25px; 
+}
+.red-card:hover{
+  box-shadow: 1px 1px 10px 0.5px var(--Red-line);
+}
+.yellow-card{
+  border-top: 5px solid  var(--Orange-line);
+}
+.yellow-card:hover{
+  box-shadow: 1px 1px 10px 0.5px var(--Orange-line);
+}
+.bleu-card{
+  border-top: 5px solid  var(--Blue-line);
+  margin-top: 100px;
+}
+.bleu-card:hover{
+  box-shadow: 1px 1px 10px 0.5px var(--Blue-line);
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+  
+}
+/* table view */
+@media (width: 768px){
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .card{
+    max-width: 230px;
+    height: 195px;
+    block-size: fit-content;
+    
+  }
+}
+@media (max-width: 425px){
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .mobile{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .row{
+    margin: 0;
+  }
+  .bleu-card{
+    margin: 0;
+  }
+  .green-card{
+    margin: 0 0  25px;
+  }
+  footer{
+    margin-top: 20px;
+  }
+
+}
+

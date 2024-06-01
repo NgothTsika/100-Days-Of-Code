@@ -1,0 +1,26 @@
+.main-container{
+    margin-top: 8%;
+}
+.product-order-container{
+    display: flex;
+    justify-content:space-between;
+}
+.short-line{
+    background-color: yellow;
+    width: 1px;
+
+}
+.button-size{
+    background-color: rgb(240, 239, 239);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    margin-bottom: 8px;
+}
+
+.star-number-containerr{
+    background-color: rgb(240, 239, 239);
+    border-radius: 1px;
+    margin-left: 3px;
+}
