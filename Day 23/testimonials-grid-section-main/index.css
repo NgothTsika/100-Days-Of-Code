@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&display=swap');
+
 body {
     background-color: hsl(210, 46%, 95%);
+     font-family: "Barlow Semi Condensed", sans-serif;
    
 }
 
@@ -25,11 +28,14 @@ body {
     color:  hsl(210, 46%, 95%) ;
     font-weight: bold;
     font-size: small;
+    font-weight: 600;
+   
 
 }
 h6{
     font-size: x-small;
     text-align: left;
+    font-weight: 500;
 }
 label{
     margin-left: 10px;

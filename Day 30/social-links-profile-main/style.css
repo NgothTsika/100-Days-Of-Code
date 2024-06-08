@@ -1,4 +1,4 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 :root {
   --Green: hsl(75, 94%, 57%);
@@ -24,6 +24,7 @@
 
 body {
   background-color: var(--Off-Black);
+   font-family: "Inter", sans-serif;
 }
 .main {
   display: flex;

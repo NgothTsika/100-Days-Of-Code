@@ -1,4 +1,4 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,700,0..100;1,9..144,700,0..100&family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
 .attribution {
   font-size: 11px;
@@ -19,7 +19,7 @@
 body{
     font-size: 14px;
     background-color: var(--Cream);
-    
+    font-family: "Fraunces", serif;   
 }
 
 main{
@@ -68,11 +68,13 @@ h6{
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-family: "Montserrat", sans-serif;
 }
 
 h1{
     color: var(--Very-dark-blue);
     font-weight: 700;
+    margin-top: -10px
     
 }
 
@@ -81,6 +83,7 @@ p{
     color: var(--Dark-grayish-blue);
     font-size: small;
     text-wrap:stable;
+    font-family: "Montserrat", sans-serif;
 }
 
 h2{
@@ -89,6 +92,8 @@ h2{
     align-content: center;
     display: flex;
     font-size: 35px;
+    font-family: "Fraunces", serif;
+    margin-top: -8px
    
 }
 h2 span{
@@ -97,6 +102,7 @@ h2 span{
     font-size: xx-small;
     color: var(--Very-dark-blue);
     margin-left: 15px;
+    font-family: "Fraunces", serif;
     
 }
 button{
@@ -110,6 +116,7 @@ button{
     align-content: center;
     justify-content: center;
     display: flex;
+    margin-top: -8px
     
 }
 
