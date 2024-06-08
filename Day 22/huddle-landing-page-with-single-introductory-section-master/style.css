@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;600&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;600&display=swap');
 
 :root {
-  --Violet: hsl(257, 40%, 49%);
+  --Violet:hsl(257, 40%, 49%);
   --Soft-Magenta: hsl(300, 69%, 71%);
 }
 
@@ -41,6 +41,8 @@ body {
   padding: 55px 0px 0px 35px;
 }
 .description h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   color: white;
   font-weight: bolder;
   font-size: 35px;
@@ -48,6 +50,8 @@ body {
 }
 
 .description P {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 15px;
   font-weight: lighter;
   color: whitesmoke;
@@ -56,6 +60,7 @@ body {
 }
 
 .container button {
+  font-family: "Poppins", sans-serif;
   padding: 10px 60px;
   border-radius: 20px;
   border-style: none;
@@ -70,16 +75,16 @@ body {
   box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.356);
 }
 
-footer{
+footer {
   width: 100%;
 }
-footer ul{
+footer ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
 }
-footer ul li{
+footer ul li {
   list-style: none;
   border: 1px solid white;
   height: 40px;
@@ -90,29 +95,25 @@ footer ul li{
   align-items: center;
 }
 
-li a{
-  display:flex ;
+li a {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-li a img{
+li a img {
   transform: scale(0.4);
   filter: invert(1);
 }
-
-
 
 a img {
   color: red;
 }
 
-
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
   }
   .main {
     height: 100vh;
@@ -121,7 +122,7 @@ a img {
     justify-content: space-between;
   }
   .container img {
-    width: 100%;  
+    width: 100%;
   }
   .description {
     padding: 20px 0px 0px 35px;
@@ -132,21 +133,18 @@ a img {
     font-size: 20px;
     margin-bottom: 15px;
   }
-  
+
   .description P {
     font-size: 12px;
     font-weight: lighter;
-    
   }
   .container button {
     padding: 9px 30px;
-    
   }
-
 }
 
-@media only screen and (max-width:600px){
-  body{
+@media only screen and (max-width: 600px) {
+  body {
     background-image: url(images/bg-mobile.svg);
     background-color: var(--Violet);
     background-position: center;
@@ -160,16 +158,14 @@ a img {
     align-content: center;
     justify-content: center;
     text-align: center;
-   
   }
 
-
-  nav img{
+  nav img {
     width: 40%;
   }
-  
+
   .container img {
-    width: 100%;  
+    width: 100%;
   }
   .description h1 {
     color: white;
@@ -177,24 +173,19 @@ a img {
     font-size: normal;
     margin-bottom: 15px;
   }
-  
-  
-  
+
   .description P {
     font-size: 12px;
     font-weight: lighter;
-    
   }
   .container button {
     padding: 9px 65px;
-    
   }
   .description {
     padding: 0px 0px 0px 0px;
   }
 
-  footer ul{
+  footer ul {
     justify-content: center;
   }
-  
 }
