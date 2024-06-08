@@ -1,0 +1,171 @@
+@import url();
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Light-red-bg: hsla(0, 100%, 67%, 0.062);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Orangey-yellow-bg: hsl(39, 100%, 56%, 0.062);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Green-teal-bg: hsl(166, 100%, 37%, 0.062);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Cobalt-blue-bg: hsl(234, 85%, 45%, 0.062);
+  --Light-slate-blue-bg: hsl(252, 100%, 67%);
+  --Light-royal-blue-bg: hsl(241, 81%, 54%);
+
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  background-color: var(--Pale-blue);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 500px;
+  /* height: 350px; */
+  background-color: var(--White);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto 20px;
+}
+
+.card-one {
+  background-color: var(--Light-slate-blue-bg);
+  padding: 15px 25px;
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  color: var(--White);
+}
+
+.card-one .circle {
+  background: 
+    hsla(256, 72%, 46%, 1) 65%
+    /* hsla(241, 72%, 46%, 0)35% */
+    ;
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.card-one .circle h1 {
+  display: grid;
+  font-size: 50px;
+}
+.card-one .circle h1 span {
+  font-size: small;
+  color: var(--Pale-blue);
+}
+
+.card-two {
+  padding: 15px 25px;
+}
+
+.result {
+  margin: 25px 0;
+}
+.card-result {
+  background-color: red;
+  margin: 12px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.result-title {
+  display: flex;
+  align-items: center;
+}
+.result-title h4 {
+  margin-left: 5px;
+}
+
+.Reaction {
+  background-color: var(--Light-red-bg);
+  color: var(--Light-red);
+}
+.Memory {
+  background-color: var(--Orangey-yellow-bg);
+  color: var(--Orangey-yellow);
+}
+.Verbal {
+  color: var(--Green-teal);
+  background-color: var(--Green-teal-bg);
+}
+
+.Visual {
+  color: var(--Cobalt-blue);
+  background-color: var(--Cobalt-blue-bg);
+}
+
+.result-value {
+  color: var(--Dark-gray-blue);
+}
+.result-value span {
+  color: var(--Light-lavender);
+}
+
+button {
+  color: var(--White);
+  background-color: var(--Dark-gray-blue);
+  padding: 10px;
+  width: 100%;
+  border-radius: 25px;
+  border-style: none;
+}
+
+@media only screen and (max-width: 430px) {
+  .card {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  .card-one {
+    border-radius: 0 0 25px 25px;
+  }
+
+  h3,
+  .circle,
+  h3,
+  p {
+    margin-bottom: 12px;
+  }
+}

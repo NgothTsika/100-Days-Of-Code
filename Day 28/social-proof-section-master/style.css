@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@400;500;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+}
+/* main page */
+main {
+  background-image: url(images/bg-pattern-top-desktop.svg),
+  url(images/bg-pattern-bottom-desktop.svg);
+background-position: left top, right bottom;
+background-repeat: no-repeat;
+  max-width: 1440px;
+  height: 100vh;
+  padding: 70px 120px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+/* text  */
+
+.card-view {
+  margin-bottom: 35px;
+}
+.card-view h1 {
+  font-size: 60px;
+  color: var(--Very-Dark-Magenta);
+  margin-bottom: 20px;
+}
+.card-view p {
+  color: var(--Dark-Grayish-Magenta);
+}
+
+/* note  */
+.card-note .note {
+  display: flex;
+  align-items: center;
+  background-color: var(--Light-Grayish-Magenta);
+  padding: 10px 25px;
+  border-radius: 9px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.card-note .note p {
+  margin-left: 15px;
+}
+
+.card-note .reviews {
+  /* position: relative; */
+  left: -45px;
+}
+.card-note .guru {
+  /* position: relative; */
+  left: -25px;
+}
+
+/* card text and id */
+.card-test {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-test .card {
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 9px;
+  width: 350px;
+  height: 200px;
+  align-content: center;
+  padding: 0 25px;
+  /* gap: 16px; */
+}
+.card-test .card-id {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.card-test .card-id img {
+  border-radius: 50%;
+  width: 35px;
+  margin: 10px;
+}
+
+.card-test .card-id h4 {
+  color: var(--Light-Grayish-Magenta);
+  margin-bottom: 5px;
+}
+.card-test .card-id p {
+  color: var(--Soft-Pink);
+}
+
+.card-test .card-descrip {
+  color: var(--Light-Grayish-Magenta);
+}
+
+.card-test .card-two {
+  /* position: relative; */
+  top: 25px;
+}
+.card-test .card-three {
+  /* position: relative; */
+  top: 45px;
+}
+
+@media (max-width: 725px) {
+  main{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+
+  header{
+    display: block;
+    text-align: center;
+  }
+
+  .card-view{
+    margin-bottom: 25px;
+  }
+  .card-note{
+    /* display: block; */
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .card-note .reviews {
+    position: relative;
+    left: -0px;
+  }
+  .card-note .guru {
+    position: relative;
+    left: -0px;
+  }
+  .note{
+    width: 350px;
+    display: block;
+    
+  }
+ 
+
+  .card-test{
+    max-width: 350px;
+    display: block;
+  }
+}
+
+@media (max-width: 725px) {
+   main{
+    
+    gap: 5rem;
+   }
+}
