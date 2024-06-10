@@ -77,12 +77,15 @@ body {
 
 footer {
   width: 100%;
+
 }
 footer ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
+  color: var(--Soft-Magenta);
+ 
 }
 footer ul li {
   list-style: none;
@@ -93,22 +96,30 @@ footer ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--Soft-Magenta);
 }
 
 li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--Soft-Magenta);
+  
 }
 
 li a img {
   transform: scale(0.4);
+  width: 40px;
+  cursor: pointer;
+}
+
+a ul,li:hover{
+ 
   filter: invert(1);
 }
 
-a img {
-  color: red;
-}
+
+
 
 @media only screen and (max-width: 768px) {
   .container {
