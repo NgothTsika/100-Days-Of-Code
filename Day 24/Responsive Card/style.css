@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Roboto:wght@400;500;700&display=swap');
+
+/*  font-family: "Raleway", sans-serif;
+ font-family: "Roboto", sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+main,
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.main-card {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.card {
+ 
+  height: 295px;
+  max-width: 280px;
+  margin: 0 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  height: 480px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-img {
+  height: 200px;
+  width: 100%;
+}
+
+.card .card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .top {
+  padding: 5px 10px;
+}
+
+.card h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: rgb(27, 26, 26);
+}
+.card h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  line-height: 20px;
+}
+.card .bottom {
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.card:hover .bottom {
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom .text {
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+}
+.card-btn {
+  margin: 10px 0;
+  text-align: left;
+}
+.card-btn a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  background: rgb(18, 18, 182);
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+
+.card-btn a:hover {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 1024px) {
+  /* .main-card { 
+   flex-wrap: wrap;
+  } */
+  .card {
+    width: 220px;
+    margin:5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-card { 
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+  }
+  .card{
+    margin: 10px;
+  }
+  
+}
+@media screen and (max-width: 425px) {
+  .main-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 700px;
+    margin: 20px 0;
+  }
+}
