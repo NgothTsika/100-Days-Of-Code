@@ -42,11 +42,13 @@ main {
   margin: 0 25px;
   background-color: var(--card-background);
   border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.205);
 }
 
 .card-descrp {
   padding: 30px 50px 0 40px;
   align-items: center;
+  display: flexbox;
 }
 
 .card-descrp h1 {

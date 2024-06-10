@@ -13,6 +13,7 @@
   box-sizing: border-box;
 }
 
+/* color using */
 :root {
   --Light-red: hsl(0, 100%, 67%);
   --Light-red-bg: hsla(0, 100%, 67%, 0.062);
@@ -32,10 +33,11 @@
   --Light-lavender: hsl(241, 100%, 89%);
   --Dark-gray-blue: hsl(224, 30%, 27%);
 }
-
+/* custome body */
 body {
   background-color: var(--Pale-blue);
   font-family: "Hanken Grotesk", sans-serif;
+  
 }
 
 main {
@@ -45,17 +47,18 @@ main {
   align-items: center;
 }
 
+/* style my card */
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 500px;
-  /* height: 350px; */
   background-color: var(--White);
   border-radius: 20px;
   overflow: hidden;
   margin: auto 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.205);
 }
-
+/* card one or card left custome */
 .card-one {
   background-color: var(--Light-slate-blue-bg);
   padding: 15px 25px;
@@ -67,6 +70,12 @@ main {
   text-align: center;
   border-radius: 20px;
   color: var(--White);
+}
+.card-one h3{
+  font-size: 17px;
+  opacity: 70%;
+  font-weight: 700;
+
 }
 
 .card-one .circle {
@@ -84,20 +93,42 @@ main {
 .card-one .circle h1 {
   display: grid;
   font-size: 50px;
+  
 }
 .card-one .circle h1 span {
   font-size: small;
   color: var(--Pale-blue);
+  opacity: 50%;
+  margin-top: 10px;
 }
+
+.card-one h4{
+  font-weight: 700;
+  font-size: 25px;
+}
+.card-one p{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 100;
+}
+
+/* card two or card right style */
 
 .card-two {
   padding: 15px 25px;
+  
 }
 
-.result {
+.card-two .result {
   margin: 25px 0;
 }
-.card-result {
+
+.card-two h3{
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.card-two .card-result {
   background-color: red;
   margin: 12px 0;
   border-radius: 8px;
@@ -107,53 +138,67 @@ main {
   padding: 10px;
 }
 
-.result-title {
+.card-two .card-result .result-title {
   display: flex;
   align-items: center;
 }
-.result-title h4 {
+.card-two .card-result .result-title h5 {
   margin-left: 5px;
 }
 
-.Reaction {
+.card-two .Reaction {
   background-color: var(--Light-red-bg);
   color: var(--Light-red);
 }
-.Memory {
+.card-two .Memory {
   background-color: var(--Orangey-yellow-bg);
   color: var(--Orangey-yellow);
 }
-.Verbal {
+.card-two .Verbal {
   color: var(--Green-teal);
   background-color: var(--Green-teal-bg);
 }
 
-.Visual {
+.card-two .Visual {
   color: var(--Cobalt-blue);
   background-color: var(--Cobalt-blue-bg);
 }
 
 .result-value {
   color: var(--Dark-gray-blue);
+  font-weight: 700;
 }
 .result-value span {
   color: var(--Light-lavender);
+  font-weight: 700;
 }
 
 button {
   color: var(--White);
   background-color: var(--Dark-gray-blue);
-  padding: 10px;
+  padding: 12px;
   width: 100%;
   border-radius: 25px;
   border-style: none;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.2s all;
+  outline:none ;
+}
+button:hover{
+  transform: 0.2 ease;
+  background-color: var(--Light-royal-blue-bg);
+
+}
+button:active{
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 @media only screen and (max-width: 430px) {
   .card {
     grid-template-columns: 1fr;
     width: 100%;
-    height: 100%;
     margin: 0;
     border-radius: 0;
   }
@@ -166,5 +211,12 @@ button {
   h3,
   p {
     margin-bottom: 12px;
+  }
+  /* body{
+    margin-bottom: 25px;
+
+  } */
+  .attribution{
+    margin-top: 30px;
   }
 }
