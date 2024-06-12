@@ -123,6 +123,7 @@ h5.number {
 }
 h5.name {
   margin-top: 20px;
+  text-transform: uppercase;
 }
 .card.back-face {
   border: none;
