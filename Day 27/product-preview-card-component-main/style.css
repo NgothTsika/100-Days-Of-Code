@@ -52,17 +52,6 @@ main {
   display: inherit;
 }
 
-/* .mobile{
-    visibility: hidden;
-} */
-
-/* .card-img{
-    background-image: url(images/image-product-desktop.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-} */
 
 h6 {
   color: var(--Dark-grayish-blue);
@@ -84,7 +73,8 @@ p {
   font-size: small;
   text-wrap: stable;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: -10px;
+  margin-top: -10px;
+  margin-bottom: -20px;
 }
 
 h2 {
