@@ -1,0 +1,147 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  /* Primary */
+
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+
+  /* Neutral */
+
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+body {
+  max-width: 1440px;
+  min-width: 375px;
+  padding: 20px 50px;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+
+.navBar .btn {
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-color: transparent;
+  color: var(--Pink);
+  border: var(--Pink) 1px solid;
+  cursor: pointer;
+}
+.navBar .btn:hover {
+  box-shadow: 1px 5px 12px rgba(0, 0, 0, 0.575);
+}
+
+/* conatainer */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container header {
+  height: 80vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.container header h1 {
+  margin-bottom: 25px;
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+.container header p {
+  margin-bottom: 25px;
+  font-size: large;
+  gap: 5px;
+}
+.container header .btn {
+  border: var(--Pink) solid;
+  padding: 15px 65px;
+  background: var(--Pink);
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.illustration img {
+  max-width: 100%;
+}
+
+.state {
+  display: flex;
+  width: 60rem;
+  justify-content: space-between;
+  margin: 35px auto;
+}
+
+.state h2 {
+  font-size: 6rem;
+}
+.state img {
+  float: left;
+  max-width: auto;
+}
+.state p {
+  font-size: larger;
+}
+
+
+.card-descr .card{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.card-descr .card {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .card .card-descr {
+    text-align: left;
+    padding: 50px;
+
+  }
+
+  .card .card-descr h3{
+    font-size: 2rem;
+    margin:30px 0 ;
+  }
+  .card-img img  {
+    padding: 20px;
+    width: 100%;
+  }
+
+ 
+
+

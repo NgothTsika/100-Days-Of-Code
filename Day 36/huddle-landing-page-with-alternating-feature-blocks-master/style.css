@@ -1,0 +1,210 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  background-image: url(images/bg-hero-desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+}
+
+header .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+header .nav-bar button {
+  border-radius: 12px;
+  width: 150px;
+  border-style: none;
+  background-color: white;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+header .fist-page {
+  display: flex;
+  align-items: center;
+  padding: 10px 45px 10px 45px;
+}
+
+header .fist-page img {
+  width: 100%;
+}
+
+.presentation .destop-img {
+  display: grid;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header .fist-page .presentation h1 {
+  font-size: 49px;
+  padding: 0 20px 0 0;
+  font-weight: bolder;
+  color: hsl(192, 100%, 9%);
+}
+
+header .fist-page .presentation p {
+  font-weight: lighter;
+  font-size: 20px;
+  gap: 5px;
+  padding: 20px 20px 20px 0;
+  color: hsl(192, 100%, 9%);
+}
+
+header .fist-page .presentation button {
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+  border-style: none;
+  background: hsl(322, 100%, 66%);
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  margin: 10px 10px 10px 0;
+  font-size: smaller;
+}
+
+/* card list */
+
+.card-list {
+  margin: 50px 50px 0 0;
+}
+
+.card-list .card {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-radius: 15px;
+  width: 65em;
+  margin: auto;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1);
+}
+.card-list .card {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.card-list .card .description {
+  text-align: left;
+  padding: 50px;
+}
+
+.card-list .card .illustration img {
+  padding: 20px;
+  width: 80%;
+}
+
+/* promotion card */
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: white;
+  padding: 60px 0px;
+  max-width: 100%;
+  width: 50%;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+  position: relative;
+  border-radius: 12px;
+  margin-bottom: -100px;
+}
+
+.promo h1 {
+  margin-bottom: 15px;
+}
+.promo button {
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 35px;
+  border-style: none;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 18px 80px;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  padding: 130px 100px 30px;
+}
+
+footer img {
+  width: 18%;
+  margin-bottom: 25px;
+}
+
+.footer-sec {
+  display: flex;
+  /* margin: 10px 0px; */
+}
+
+.sec-1 {
+  min-width: 40%;
+  width: 40%;
+}
+
+.add {
+  display: flex;
+  align-items: flex-start;
+}
+
+.add img {
+  margin-top: 4px;
+  margin-right: 10px;
+  width: 4%;
+}
+
+li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.sec-2,
+.sec-3,
+.social {
+  width: 20%;
+  margin-left: 10px;
+}
+
+.social a{
+  width: 15%;
+  margin-right: 20px;
+}
+
+.copy {
+  text-align: right;
+}
+
+
+@media(max-width: 992px){
+  header{
+    padding: 30px 20px;
+  }
+
+  
+}

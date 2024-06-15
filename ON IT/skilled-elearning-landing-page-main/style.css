@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: all ease 0.2s;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+picture {
+  width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* remove all button styles */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* colors  */
+:root {
+  /* primary */
+  --dark-blue: hsla(234, 53%, 16%, 1);
+  --pink: hsla(341, 92%, 62%, 1);
+  --light-pink: hsla(341, 100%, 83%, 1);
+  --purple: hsla(261, 75%, 58%, 1);
+  /* neutral */
+  --gray: hsla(233, 10%, 56%, 1);
+  --blue-gray: hsla(234, 25%, 52%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+}
+
+/* typography + buttons + paddings */
+
+.heading-xl {
+  font: 800 3.5rem/3.75rem 'Plus Jakarta Sans', sans-serif;
+  color: var(--dark-blue);
+}
+
+.heading-l {
+  font: 800 2.5rem/3.125rem 'Plus Jakarta Sans', sans-serif;
+  color: var(--dark-blue);
+}
+
+.heading-m {
+  font: 800 2rem/2.5rem 'Plus Jakarta Sans', sans-serif;
+  color: var(--dark-blue);
+}
+
+.heading-s {
+  font: 800 1.5rem/1.875rem 'Plus Jakarta Sans', sans-serif;
+  color: var(--dark-blue);
+}
+
+.body-m {
+  font: 500 1.125rem/1.75rem 'Plus Jakarta Sans', sans-serif;
+  color: var(--gray);
+}
+
+.body-s {
+  font: 700 1rem/1.75rem 'Plus Jakarta Sans', sans-serif;
+  color: var(--gray);
+}
+
+.link {
+  font: 700 1.125rem/1.75rem 'Plus Jakarta Sans', sans-serif;
+  color:
+    var(--pink);
+}
+
+.margin-top-card-50 {
+  margin-top: 3.125rem;
+}
+
+.padding-bottom-24 {
+  padding-bottom: 1.5rem;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 1.875rem;
+}
+
+.padding-bottom-50 {
+  padding-bottom: 3.125rem;
+}
+
+
+.btn {
+  font: 500 1.125rem/1.5rem 'Plus Jakarta Sans', sans-serif;
+  padding: 0.875rem 2rem;
+  border-radius: 3.125rem;
+  color: var(--white);
+  transition: all ease 0.3s;
+}
+
+a {
+  color: var(--white);
+}
+
+.btn-1 {
+  background-color: var(--dark-blue);
+}
+
+.btn-2 {
+  background: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+}
+
+.btn-3 {
+  background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+}
+
+/* *** */
+
+body {
+  line-height: 1.3;
+  text-rendering: optimizeSpeed;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.875rem;
+  padding-bottom: 11.25rem;
+}
+
+.logo {
+  fill: var(--dark-blue);
+}
+
+.logo-footer {
+  fill: var(--white);
+}
+
+/* container */
+.container {
+  margin: 0 auto;
+  max-width: 69.375rem;
+}
+
+.padding-inline-20 {
+  padding-inline: 1.25rem;
+}
+
+.margin-inside {
+  padding: 0 2.5rem;
+}
+
+
+/* hero */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  gap: 1.25rem;
+  padding-bottom: 16.25rem;
+}
+
+
+.hero-heading {
+  max-width: 31.25rem;
+}
+
+.hero-img {
+  position: absolute;
+  left: 53.4%;
+  top: -20%;
+  z-index: -1;
+}
+
+
+/* card */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+  row-gap: 3.75rem;
+  padding-bottom: 8.75rem;
+}
+
+.card,
+.card-hover {
+  position: relative;
+  border-radius: 0.9375rem;
+  background-color: var(--white);
+  padding: 2rem 2.375rem;
+  box-shadow: 0rem 1.5625rem 3.125rem rgba(6, 22, 141, 0.0442381);
+  transition: ease-in-out 0.3s;
+}
+
+.gradient {
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.card img {
+  height: 3.5rem;
+  position: absolute;
+  margin-top: -3.75rem;
+}
+
+.card .heading-s {
+  padding-top: 2rem;
+}
+
+.card-hover .heading-m {
+  color: var(--white);
+}
+
+/* footer */
+
+footer {
+  background-color: var(--dark-blue);
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.875rem;
+}
+
+/* hover states */
+@media (hover:hover) {
+
+  .card:hover {
+    box-shadow: 0rem 1.5625rem 3.125rem rgba(38, 22, 96, 0.25);
+    transition: ease-in-out 0.3s;
+    transform: scale(1.03);
+  }
+
+  .card img {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+  }
+
+  .card img:hover {
+    transform: rotate(360deg);
+    transition: ease-in-out 0.5s;
+  }
+
+  /* card icon affects card text */
+  .card img:hover~h3 {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: ease-in-out 0.5s;
+  }
+
+  .card img:hover~a,
+  .card h3:hover {
+    color: var(--pink);
+    transition: ease-in-out 0.5s;
+  }
+
+  .card img:hover~p {
+    opacity: 0.75;
+    transition: ease-in-out 0.5s;
+  }
+
+  /* *** */
+
+  /* card-hover photo + scale */
+  .card-hover:hover~.card {
+    transform: scale(0.95);
+    filter: hue-rotate(-60deg);
+    transition: all ease-in-out 0.5s;
+  }
+
+  .card-hover {
+    transition: all ease-in-out 0.5s;
+  }
+
+  .card-hover:hover {
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-image: url(./assets/card-photo.png);
+    box-shadow: 0rem 1.5625rem 3.125rem rgba(255, 233, 240, 0.25);
+  }
+
+  .card:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* *** */
+
+  .btn:hover,
+  .btn-1:hover,
+  .link:hover {
+    opacity: 0.75;
+    transition: all ease 0.3s;
+  }
+
+  .logo:hover,
+  .logo-footer:hover {
+    fill: var(--pink);
+  }
+}
+
+
+
+
+@media (max-width: 75rem) {
+
+  .hero-img {
+    position: absolute;
+    left: 59.5%;
+    top: -10%;
+  }
+
+  .hero-img img {
+    width: 70%;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-hover:hover {
+    background-size: cover;
+    background-position: right;
+    background-image: url(./assets/card-photo-tablet.png);
+  }
+
+  .card-hover:hover~.card {
+    transform: scale(1);
+    filter: hue-rotate(-60deg);
+    transition: all ease-in-out 0.5s;
+  }
+}
+
+
+@media (max-width: 50rem) {
+  .heading-xl {
+    font: 800 2.5rem/2.75rem 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .body-m {
+    font: 500 1rem/1.5rem 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .hero-heading {
+    max-width: 23.75rem;
+  }
+
+  .hero-img {
+    position: absolute;
+    left: 44%;
+    top: -10%;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+
+  .features {
+    gap: 1rem;
+    row-gap: 3.125rem;
+  }
+
+}
+
+@media (max-width: 40rem) {
+
+  .container {
+    margin: 0;
+  }
+
+  header {
+    padding-bottom: 2.5rem;
+  }
+
+  .hero {
+    overflow: unset;
+    flex-direction: column;
+    padding-top: 1.875rem;
+    gap: 2.5rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .heading-xl {
+    font: 800 2.5rem/2.75rem 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .padding-bottom-30,
+  .padding-bottom-50 {
+    padding-bottom: 1.75rem;
+  }
+
+  .hero-img {
+    position: initial;
+  }
+
+  .hero-img img {
+    margin: 0 auto;
+  }
+
+  .hero-heading {
+    max-width: 100%;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 3.125rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .card {
+    padding: 1rem 2rem;
+  }
+
+  .card img {
+    height: 3.125rem;
+    position: absolute;
+    margin-top: -2.5rem;
+  }
+
+  .card-hover:hover {
+    background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+  }
+
+  .card-hover:hover~.card {
+    transform: unset;
+    filter: unset;
+  }
+
+  .btn,
+  .btn-1,
+  .btn-2,
+  .btn-3 {
+    font: 500 0.9375rem/1.5rem 'Plus Jakarta Sans', sans-serif;
+    padding: 0.5rem 1.5rem;
+  }
+
+}
+
+*/

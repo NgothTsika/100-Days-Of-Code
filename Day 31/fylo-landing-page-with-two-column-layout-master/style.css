@@ -22,16 +22,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* font-family: "Open Sans", sans-serif;
-  font-family: "Raleway", sans-serif; */
-/* 400 700- 400 */
-
 .space-main {
   margin: 35px 45px;
 }
 
 /* navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -63,8 +59,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 4.375rem 0;
-  /* align-items: center; */
-  /* text-align: left; */
 }
 .intro .illustration {
   grid-column: 1;
@@ -107,12 +101,12 @@ input {
   padding: 9px 7px;
   width: 20.625rem;
   font-family: "Open San", sans-serif;
-  margin-right: 10px;
+ margin-bottom: 15px;
 }
 
 button {
-  padding: 11px 7px;
-  width: 25%;
+  padding: 9px 7px;
+  width: 20.625rem;
   background-color: var(--Bright-Blue);
   border-radius: 5px;
   border-style: hidden;
@@ -120,10 +114,10 @@ button {
   color: var(--Light-Grayish-Blue);
   cursor: pointer;
 }
+Button:hover{
+ opacity: 70%;
+}
 
-/* button:hover{
-  border-style:solid;
-} */
 
 /* desck section */
 
@@ -168,6 +162,7 @@ button {
 .container-desck h3 {
   color: var(--Moderate-Cyan);
   text-decoration-line: underline;
+  cursor: pointer;
 }
 
 .card-quotes {
@@ -203,14 +198,14 @@ button {
 
 /* section last-view */
 
-/* .last-view{
+.last-view{
 background-color: var(--Desaturated-Blue);
 padding: 50px 50px;
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
 .last-view .container{
-  padding-right:200px ;
+  width: 70%;
 }
 
 .last-view .container h1{
@@ -228,8 +223,11 @@ grid-template-columns: 1fr 1fr;
 }
 
 .form-mail input{
-  margin-bottom: 10px;
-} */
+  margin-bottom: 15px;
+}
+.form-mail button{
+  width: 35%;
+}
 /* footer */
 
 footer {
@@ -243,24 +241,76 @@ footer .company {
   display: flex;
   justify-content: space-between;
 }
+footer .company img  {
+  margin-right: 15px;
+}
 
 footer .company li {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 footer .company ul li a {
   text-decoration: none;
   color: var(--Light-Grayish-Blue);
 }
+footer .company ul li a:hover {
+  color: rgb(66, 66, 255);
+}
+footer .company ul li a img {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px;
+}
+footer .company > *:nth-child(4) {
+  display: flex;
+  
+}
 
-@media (max-width: 725px) {
+
+@media (max-width: 768px){
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .intro .illustration {
+    width: 100%;
+  }
+  .action-container h1 {
+    font-size: 25px;
+  }
+  .action-container p {
+    font-size: 12px;
+  }
+  .form input, button{
+    width: 85%;
+  }
+  .container-desck h1 {
+    font-size: 20px;
+  }
+  .container-desck p {
+    font-size: 12px;
+  }
+
+  .container-desck h3 {
+    font-size: 17px;
+  }
+  .card-quotes {
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  
+  
   .space-main {
     display: grid;
     align-items: center;
   }
   .navbar .logo img {
-    width: 60%;
+    width: 40%;
+  }
+  .navbar .nav_links {
+   width: 50%;
   }
   .navbar ul li a {
     font-size: 12px;
@@ -270,40 +320,44 @@ footer .company ul li a {
   .navbar li {
     margin: 0 5px;
   }
-  .intro{
+  .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .intro .illustration{
+  .intro .illustration {
     max-width: 100%;
   }
   .action-container h1 {
     font-size: 25px;
   }
-  .action-container p{
+  .action-container p {
     font-size: 17px;
   }
   .intro .form {
+    
     width: 100%;
   }
-
-  input{
-    margin-bottom: 20px;
+  input {
+    margin-bottom: 25px;
   }
-  button {
-
+  .form-mail button {
     width: 100%;
-   
   }
   /* desk */
-  .desck{
+  .desck {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .container-desck{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .container-desck h1 {
     font-size: 25px;
@@ -311,9 +365,122 @@ footer .company ul li a {
   .container-desck p {
     font-size: 17px;
   }
-  
+
   .container-desck h3 {
     font-size: 17px;
   }
+
+  /* section last-view */
+
+  .last-view {
+    background-color: var(--Desaturated-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 50px;
+  }
+  .last-view .container {
+    margin-bottom: 25px;
+  }
+
+  .last-view .container h1 {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .last-view .container p {
+    color: var(--Light-Grayish-Blue);
+    font-weight: lighter;
+  }
+
+  .form-mail {
+    display: grid;
+  }
+
+  .form-mail input {
+    margin-bottom: 10px;
+  }
+
+  /* footer */
   
+
+  footer .company {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer .company > *:nth-child(1) {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  footer .company > *:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  footer .company > *:nth-child(3) {
+    margin-bottom: 20px;
+  }
+  footer .company > *:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 320px){
+  
+  
+  .space-main {
+    display: grid;
+    align-items: center;
+  }
+  .navbar .logo img {
+    width: 50%;
+  }
+  .navbar .nav_links {
+   width: 100%;
+  }
+  .navbar ul li a {
+    font-size: 10px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .intro .illustration {
+    max-width: 90%;
+  }
+  .action-container{
+    width: 80%;
+  }
+  .card-quotes {
+    width: 100%;
+  }
+  .card-quotes .card-id img {
+    border-radius: 100px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  /* desk */
+ 
+  .container-desck{
+    width: 80%;
+  }
+  .container-desck h1 {
+    font-size: 20px;
+  }
+  .container-desck p {
+    font-size: 12px;
+  }
+  .container-desck h3 {
+    font-size: 13px;
+  }
+  /* section last-view */
+.last-view input,button{
+  width: 100%;
+}
+
 }
