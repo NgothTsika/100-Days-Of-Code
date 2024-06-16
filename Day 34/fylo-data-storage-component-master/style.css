@@ -1,0 +1,141 @@
+@import url();
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  /* - Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%) */
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+  --fs: 14px;
+  --ff: "Raleway", sans-serif;
+  --fw-b: 700;
+  --fw-s: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/bg-mobile.png);
+  background-color: var(--Very-Dark-Blue);
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--Dark-Blue);
+  padding: 50px 60px;
+  width: 100%;
+  margin: 10px 50px;
+  border-radius: 10px;
+}
+.card-top {
+  border-top-right-radius: 100px;
+}
+
+.card-top .links {
+  display: flex;
+  margin-top: 20px;
+}
+
+.card-top .links img {
+  background-color: var(--Very-Dark-Blue);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 15px 0 0;
+}
+
+/* card bottom */
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.card-bottom h2 {
+  font-size: var(--fs);
+  color: var(--Grayish-Blue);
+  font-weight: var(--fw-s);
+  margin-bottom: 15px;
+}
+.card-bottom h2 span {
+  color: var(--Pale-Blue);
+  font-weight: var(--fw-b);
+}
+.card-bottom .card-detail .crad-rang {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card-bottom .card-detail .crad-rang input {
+  width: 100%;
+}
+
+.card-bottom .card-detail .card-rang-data {
+  display: flex;
+  justify-content: space-between;
+  color: var(--Pale-Blue);
+  font-weight: var(--fw-b);
+  font-size: var(--fs);
+}
+
+.card-bottom .card-data {
+  position: absolute;
+  z-index: 2;
+  top: 135px;
+  background-color: var(--Pale-Blue);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 25px;
+}
+
+.card-bottom .card-data h1 {
+  color: var(--Very-Dark-Blue);
+  font-weight: var(--fw-b);
+  display: flex;
+  align-items: center;
+}
+.card-bottom .card-data h1 span {
+  color: var(--Very-Dark-Blue);
+  font-size: var(--fs);
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(images/bg-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
