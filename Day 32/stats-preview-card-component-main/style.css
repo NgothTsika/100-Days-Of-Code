@@ -13,7 +13,7 @@
   --card-background: hsl(244, 38%, 16%);
   --Soft-violet-accent: hsl(277, 64%, 61%);
   --White-main-heading-stats: hsl(0, 0%, 100%);
-  -main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
   --transparent-white-headings: hsla(0, 0%, 100%, 0.6);
   --ff-I: "Inter", sans-serif;
   --ff-d:"Lexend Deca", sans-serif;
