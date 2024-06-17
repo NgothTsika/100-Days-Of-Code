@@ -15,6 +15,8 @@
   --White-main-heading-stats: hsl(0, 0%, 100%);
   -main-paragraph: hsla(0, 0%, 100%, 0.75);
   --transparent-white-headings: hsla(0, 0%, 100%, 0.6);
+  --ff-I: "Inter", sans-serif;
+  --ff-d:"Lexend Deca", sans-serif;
 }
 * {
   margin: 0;
@@ -32,27 +34,30 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-inline: 2.4rem;
 }
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
-  max-width: 870px;
-  max-height: 340px;
-  margin: 0 25px;
+  width: 870px;
+  height: 340px;
+  /* margin: 0 25px; */
   background-color: var(--card-background);
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.205);
 }
 
 .card-descrp {
-  padding: 30px 50px 0 40px;
+  padding: 30px 40px 0 40px;
   align-items: center;
-  display: flexbox;
+  padding-inline: 2.5rem;
 }
 
 .card-descrp h1 {
   margin-bottom: 20px;
+  font-family: var(--ff-I);
+  font-weight: 700;
 }
 .card-descrp h1 span {
   color: var(--Soft-violet-accent);
@@ -60,6 +65,9 @@ main {
 
 .card-descrp p {
   margin-bottom: 40px;
+  font-family: var(--ff-d);
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .note {
@@ -71,23 +79,24 @@ main {
 .note h2 {
   display: grid;
   font-size: 25px;
+  font-family: var(--ff-I);
 }
 .note h2 span {
   font-size: x-small;
   text-transform: uppercase;
+  font-family: var(--ff-d);
 }
 
 .card-img img {
   max-width: 100%;
   height: 100%;
-  
-  
-
 }
 
 .card .card-img{
+  width: 100%;
+  order: 2;
   position: relative;
-  overflow: hidden;
+ 
 }
 
 .card .card-img::before{
@@ -100,39 +109,22 @@ main {
   mix-blend-mode: multiply;
 }
 
-/* .card-img::before{
-  content: "";
-  position: absolute;
-  width: 435px;
-  height: 340px;
-  background-color: var(--Soft-violet-accent);
-  mix-blend-mode: multiply;
-  overflow: hidden;
-
-} */
-
-@media only screen and (max-width: 690px) {
-  body {
-    display: flex;
-    flex-direction: column;
+@media  (max-width: 690px) {
+  body{
+    margin: 25px;
   }
   main {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    padding-inline: 2.4rem;
+    height: auto;
   }
   .card {
     display: flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    max-height: 150vh;
+    height: 100%;
   }
   .card-descrp {
-    padding: Opx Opx 0 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -153,16 +145,10 @@ main {
   .note h2 {
     margin-bottom: 25px;
   }
-  .card-img img {
-    max-width: 100%;
-    height: 50%;
+  .card-img{
+    width: 100%;
+    height: 100%;
   }
-  /* .attribution {
-        margin-top: 50px;
-    }
-body{
-    margin: 0;
-    padding: 0; */
 }
 
 

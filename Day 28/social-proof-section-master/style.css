@@ -22,92 +22,64 @@
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
 }
-
-body {
-  background-image: url(images/bg-pattern-top-desktop.svg),
-    url(images/bg-pattern-bottom-desktop.svg);
-  background-position: left top, right bottom;
-  background-repeat: no-repeat;
-  /* max-width: 1440px; */
-  height: 100vh;
-  /* padding: 70px 120px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+/* main page */
 main {
-  display: flex;
-  flex-direction: column;
-  /* height: 100vh; */
-  /* justify-content: center; */
-  /* margin: 35px 10px; */
-  /* justify-content: space-between; */
+  background-image: url(images/bg-pattern-top-desktop.svg),
+  url(images/bg-pattern-bottom-desktop.svg);
+background-position: left top, right bottom;
+background-repeat: no-repeat;
+  max-width: 1440px;
+  height: 100vh;
   padding: 70px 120px;
-  align-items: center;
 }
 header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
-
 /* text  */
 
 .card-view {
-  /* margin-bottom: 50px; */
-  flex-basis: 35%;
+  margin-bottom: 35px;
 }
 .card-view h1 {
-  font-size: 50px;
+  font-size: 60px;
   color: var(--Very-Dark-Magenta);
   margin-bottom: 20px;
 }
 .card-view p {
   color: var(--Dark-Grayish-Magenta);
-  font-size: 15px;
 }
 
-
-
-/* card note */
-
-.card-note {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
-}
+/* note  */
 .card-note .note {
   display: flex;
   align-items: center;
   background-color: var(--Light-Grayish-Magenta);
-  padding: 15px 15px;
-  width: 320px;
+  padding: 10px 25px;
   border-radius: 9px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 .card-note .note p {
   margin-left: 15px;
 }
-.card-note > *:nth-child(1) {
-  margin-right: 35px;
-  /* position: relative;
-  left: -45px; */
+
+.card-note .reviews {
+  position: relative;
+  left: -45px;
 }
-.card-note > *:nth-child(2) {
-  margin-right: 20px;
-  /* position: relative;
-  left: -25px; */
+.card-note .guru {
+  position: relative;
+  left: -25px;
 }
 
-
-
-/* card-test */
+/* card text and id */
 .card-test {
   display: flex;
   justify-content: space-between;
-  
 }
+
 .card-test .card {
   background-color: var(--Very-Dark-Magenta);
   border-radius: 9px;
@@ -115,10 +87,8 @@ header {
   height: 200px;
   align-content: center;
   padding: 0 25px;
-  margin: 0 15px;
+  /* gap: 16px; */
 }
-
-/* card text and id */
 .card-test .card-id {
   display: flex;
   align-items: center;
@@ -128,7 +98,7 @@ header {
 .card-test .card-id img {
   border-radius: 50%;
   width: 35px;
-  margin-right: 10px;
+  margin: 10px;
 }
 
 .card-test .card-id h4 {
@@ -137,43 +107,83 @@ header {
 }
 .card-test .card-id p {
   color: var(--Soft-Pink);
-  font-size: small;
 }
+
 .card-test .card-descrip {
   color: var(--Light-Grayish-Magenta);
 }
 
-.card-test > *:nth-child(1) {
- 
-  margin-top: -35px;
- 
+.card-test .card-two {
+  /* position: relative; */
+  top: 25px;
 }
-.card-test > *:nth-child(2) {
- 
-  margin-top: -20px;
+.card-test .card-three {
+  /* position: relative; */
+  top: 45px;
 }
-
 
 @media (max-width: 725px) {
   main{
     display: flex;
+
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    justify-content: center;
+    
   }
-  header {
+  
+
+  header{
+    display: block;
+    text-align: center;
+  }
+
+  .card-view{
+    margin-bottom: 25px;
+  }
+  .card-note{
+    /* display: block; */
+    align-items: center;
+    align-content: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
   }
-  .card-note .note{
-    display: flex;
-    flex-wrap: wrap;
+  .card-note .reviews {
+    position: relative;
+    left: -0px;
+  }
+  .card-note .guru {
+    position: relative;
+    left: -0px;
+  }
+  .note{
+    width: 350px;
+    display: block;
     
   }
-  .card-test  {
-   display: flex;
-   flex-direction: column;
+ 
+
+  .card-test{
+    max-width: 350px;
+    display: block;
+    
   }
+  .card{
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width:1024px) {
+  .card .card-one{
+  top: 50px;
+}
+.card-test .card-two {
+  /* position: relative; */
+  top: 25px;
+}
+.card-test .card-three {
+  /* position: relative; */
+  top: 45px;
+}
 }
