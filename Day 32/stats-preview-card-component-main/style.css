@@ -26,7 +26,7 @@
 body {
   background-color: var(--main-background);
   color: white;
-  /* margin: 25px; */
+
 }
 
 main {
@@ -64,6 +64,7 @@ main {
 }
 
 .card-descrp p {
+  color:var(--main-paragraph);
   margin-bottom: 40px;
   font-family: var(--ff-d);
   font-weight: 400;
