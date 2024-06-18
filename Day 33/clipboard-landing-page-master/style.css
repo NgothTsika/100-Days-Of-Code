@@ -1,4 +1,4 @@
-@import url();
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 .attribution {
   font-size: 11px;
@@ -13,8 +13,9 @@
   --Light-Blue: hsl(233, 100%, 69%);
   --Dark-Grayish-Blue: hsl(210, 10%, 33%);
   --Grayish-Blue: hsl(201, 11%, 66%);
-  /* --fs-title: font-weight: 400;
---fs-desc: font-weight: 600; */
+  --ff: "Bai Jamjuree", sans-serif;
+  --fs-title: 400;
+  --fs-desc: 600;
 }
 
 * {
@@ -22,7 +23,9 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 18px;
+  font-family: var(--ff);
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -32,15 +35,17 @@ main {
 
 header {
   background-image: url(images/bg-header-desktop.png);
+  background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 180px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 25px;
 }
 header img {
-  width: 5%;
+  width: 15%;
 }
 /* section intro */
 .intro {
@@ -52,12 +57,12 @@ header img {
   font-size: 40px;
   font-weight: 600;
   color: var(--Dark-Grayish-Blue);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .intro p {
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .intro .action-btn a {
   text-decoration: none;
@@ -68,7 +73,14 @@ header img {
   border-radius: 15px;
   padding: 5px 20px;
   border-style: none;
-  margin: 5px 5px;
+  margin: 20px 5px;
+  cursor: pointer;
+  
+}
+button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #0069d9;
+  color: white;
 }
 .intro .action-btn .btn-one {
   background-color: var(--Strong-Cyan);
@@ -76,7 +88,6 @@ header img {
 .intro .action-btn .btn-two {
   background-color: var(--Light-Blue);
 }
-
 /* product section */
 .prodct {
   margin: 40px 0;
@@ -84,6 +95,7 @@ header img {
   flex-direction: column;
   align-items: center;
 }
+
 .prodct .title {
   width: 50%;
   margin-bottom: 40px;
@@ -91,22 +103,21 @@ header img {
 
 .prodct .prodct-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 .prodct .prodct-content .illustration {
-  margin-left: -55px;
+ width: 100%;
 }
-.prodct .prodct-content .advent {
+.prodct .prodct-content .illustration img{
+  width:70%;
+ }
+
+ .prodct .prodct-content .advent {
   margin: 60px 50px;
-  text-align: left;
-  /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+  text-align: center;
 }
 .prodct .prodct-content .card {
   margin-bottom: 15px;
-  width: 350px;
 }
 .prodct .prodct-content .card h4 {
   margin-bottom: 10px;
@@ -124,21 +135,33 @@ header img {
 }
 
 .access .adv{
-    margin-bottom: 45px;
-    width: 50%;
+  margin: 10px 30px;
+ 
+}
+.access .adv p{
+ 
+  width: 100%;
+}
+.access .adv .illust{
+  width: 100%;
+}
+.illust img{
+  width: 70%;
 }
 /* row-prodct section */
 .row-prodct{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin-bottom: 50px;
 }
 .row-prodct .card{
-    width: 350px;
     margin: 25px 20px;
 }
 
 .row-logo{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
@@ -147,135 +170,177 @@ header img {
 }
 
 .row-logo .card{
-   width: 50%;
-   margin:0 50px;
+   width: 100%;
+   margin:0 10px;
 }
 
 /* section intro */
 .call-act {
-    margin: 15px 0;
-    width: 50%;
-  }
-  
-  .call-act h1 {
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--Dark-Grayish-Blue);
-    margin-bottom: 15px;
-  }
-  
-  .call-act p {
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-  .call-act .action-btn a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-  }
-  .call-act .action-btn button {
-    border-radius: 15px;
-    padding: 5px 20px;
-    border-style: none;
-    margin: 5px 5px;
-  }
-  .call-act .action-btn .btn-one {
-    background-color: var(--Strong-Cyan);
-  }
-  .call-act .action-btn .btn-two {
-    background-color: var(--Light-Blue);}
+  margin: 15px 0;
+  width: 50%;
+}
+
+.call-act h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 15px;
+}
+
+.call-act p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.call-act .action-btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.call-act .action-btn button {
+  border-radius: 15px;
+  padding: 5px 20px;
+  border-style: none;
+  margin: 5px 5px;
+}
+.call-act .action-btn .btn-one {
+  background-color: var(--Strong-Cyan);
+}
+.call-act .action-btn .btn-two {
+  background-color: var(--Light-Blue);}
+
+/* footer */
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--Grayish-Blue);
+  padding: 20px 25px;
+}
+
+footer .lelt-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
 
-  /* footer */
-  footer{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    background-color: var(--Grayish-Blue);
-    padding: 20px 25px;
-  }
+footer .logo img{
+  width: 50%;
+}
 
-  footer .lelt-side{
-    display: flex;
-    align-items: center;
-    text-align: left;
-  }
+footer .page_links{
+  display: flex;
+  flex-direction: column;
 
+}
+
+footer .page_links ul li {
+  list-style: none;
+  font-weight: 500;
+  margin: 15px 0;
+  cursor: pointer;
+}
+footer .page_links ul li:hover {
+ color: var(--Strong-Cyan);
+}
+
+footer .social_links img{
+  cursor: pointer;
+  margin: 0 10px;
  
-  footer .logo img{
+}
+
+
+@media (min-width: 1024px){
+  header img {
     width: 10%;
   }
+  /* product section */
 
-  footer .page_links{
-    display: flex;
-    margin-left: 20px;
 
-  }
+.prodct .prodct-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.prodct .prodct-content .illustration {
+ width: 100%;
+}
+.prodct .prodct-content .illustration img{
+  width:100%;
+  margin-left: -45px;
+ }
 
-  footer .page_links ul li {
-    list-style: none;
-    margin: 10px 15px;
-  }
+ .prodct .prodct-content .advent {
+  text-align: left;
+}
+/* access section */
 
-  @media (max-width: 425px){
-    header img {
-        width: 20%;
-      }
-    .prodct{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    .prodct .prodct-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .prodct .prodct-content .illustration {
-        margin-left: 0;
-      }
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.access .adv .illust{
+  width: 100%;
+}
+.illust img{
+  width: 100%;
+}
+/* row-prodct section */
+.row-prodct{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.row-prodct .card{
+  margin: 55px 20px;
+  max-width: 250px;
+}
+.row-logo{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  
 
-      .row-prodct{
-        display: flex;
-        flex-direction: column;
-      }
-      .row-logo{
-        display: flex;
-        flex-direction: column;
-      }
-      .row-logo .card{
-        margin-bottom: 15px;
-      }
-      
-        /* footer */
-  footer{
-    display: flex;
-    flex-direction: column;
-    
-  }
+}
 
-  footer .lelt-side{
-    display: flex;
-    flex-direction: column;
-   
-  }
+.row-logo .card{
+ width: 100%;
+ margin: 15px;
+}
+/* footer */
+footer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--Grayish-Blue);
+  padding: 20px 25px;
+}
+footer .lelt-side{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+footer .logo img{
+  width: 50%;
+}
 
-  footer .page_links{
-    display: flex;
-    flex-direction: column;
-   
+footer .page_links{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
 
-  }
+}
 
-  .access .illust img{
-    width: 70%;
-  }
-
-  .prodct .prodct-content .illustration img{
-    width: 60%;
-  }
-
-  }
+footer .page_links ul li {
+  list-style: none;
+  margin: 10px 15px;
+}
+}
