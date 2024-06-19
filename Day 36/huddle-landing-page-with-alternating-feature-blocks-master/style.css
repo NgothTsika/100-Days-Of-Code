@@ -86,6 +86,8 @@ header .fist-page .presentation p {
 }
 
 header .fist-page .presentation button {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-big-body);
   background: var(--Pink);
   border-style: none;
   padding: 10px 25px;
@@ -136,8 +138,7 @@ header .fist-page .presentation button:hover {
 .promo {
   margin:0 50px;
   top: 100px;
- 
-  display: flex;
+ display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
@@ -151,8 +152,11 @@ header .fist-page .presentation button:hover {
 }
 .promo h1 {
   margin-bottom: 15px;
+  font-family: var(--ff-heading);
 }
 .promo button {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-big-body);
   box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
   border-radius: 35px;
   border-style: none;
@@ -169,7 +173,7 @@ header .fist-page .presentation button:hover {
 
 footer {
   display: flex;
-  /* align-items: center; */
+  font-family: var(--ff-heading);
   flex-direction: column;
   background-color: hsl(192, 100%, 9%);
   color: white;
