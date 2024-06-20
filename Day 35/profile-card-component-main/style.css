@@ -1,0 +1,68 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --fs: 18px;
+  --fw-small: 400;
+  --fw-big: 700;
+  --ff: "Kumbh Sans", sans-serief;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-color: var(--Dark-cyan);
+    background-position: top left, bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    display: grid;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.card-bg{
+  background-image: url(images/bg-pattern-card.svg);
+  width: 100%;
+  
+}
+.card-bg img{
+  width: 50%;
+  border-radius: 50%;
+  border: 5px white solid;
+  position: relative;
+  
+}
+
+.card-info{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card-info .user-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
